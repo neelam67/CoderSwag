@@ -10,10 +10,7 @@ import android.widget.TextView
 import com.example.coderswag.R
 import com.example.coderswag.model.Category
 
-class categoryAdapter(context: Context, categories: List<Category>) : BaseAdapter() {
-
-    var context = context
-    var categories = categories
+class categoryAdapter(var context: Context, var categories: List<Category>) : BaseAdapter() {
 
     override fun getView(position: Int,convertView: View?, parent: ViewGroup?): View {
 
